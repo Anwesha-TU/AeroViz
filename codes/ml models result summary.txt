@@ -1,0 +1,76 @@
+MODEL PERFORMANCE COMPARISON
+Visibility Prediction
+
+Evaluation metrics:
+MAE  = Mean Absolute Error (m) - lower is better
+RMSE = Root Mean Squared Error (m) - lower is better
+R²   = Coefficient of Determination - higher is better
+
+CASE DEFINITIONS
+Case 1: Training using only the months with predominantly low visibility (<1000 m):
+        November, December, January, February and March.
+Case 2: Training using all available months.
+
+Test period: January-March 2026
+
+
+======================================================================================================================
+MODEL                 ONLY IGP/IGI DATA                             ENTIRE DELHI REGION DATA
+                  Case 1          Case 2                            Case 1             Case 2
+                MAE      RMSE     R²     MAE    RMSE    R²      MAE	RMSE	R²       MAE   RMSE 	R²
+======================================================================================================================
+
+Linear
+Regression      837.57 1017.74 0.5591   823.94 992.66 0.5805   859.86 1049.10 0.5315   860.88 1038.41 0.5410
+
+Ridge
+Regression      837.52 1017.64 0.5592   824.01 992.75 0.5805   859.86 1049.10 0.5315   860.88 1038.41 0.5410
+
+Random
+Forest          738.08 929.46 0.6323    724.41 915.00 0.6436   745.45 946.75 0.6184    759.68 959.86  0.6078
+
+Gradient
+Boosting        732.60 919.67 0.6390    721.27 912.38 0.6456   736.62 936.27 0.6268    760.39 958.36  0.6090
+
+SVR             713.93 895.82 0.6584    706.75 897.24 0.6573   747.26 945.92 0.6191    760.76 964.12  0.6043
+
+======================================================================================================================
+
+
+BEST RESULTS
+
+Only IGP/IGI data:
+    Case 1 -> SVR
+        MAE  = 713.93 m
+        RMSE = 895.82 m
+        R²   = 0.6584
+
+    Case 2 -> SVR
+        MAE  = 706.75 m
+        RMSE = 897.24 m
+        R²   = 0.6573
+
+Entire Delhi region:
+    Case 1 -> Gradient Boosting
+        MAE  = 736.62 m
+        RMSE = 936.27 m
+        R²   = 0.6268
+
+    Case 2 -> Gradient Boosting
+        MAE  = 760.39 m
+        RMSE = 958.36 m
+        R²   = 0.6090
+
+
+MAIN OBSERVATION
+
+The best-performing model differs between the two datasets.
+
+For the IGP/IGI-specific dataset, SVR gives the best performance in both
+training cases.
+
+For the entire Delhi-region dataset, Gradient Boosting gives the best
+performance in both training cases.
+
+Accuracy (%) is not used because visibility prediction is a regression
+problem. MAE, RMSE and R² are the appropriate primary evaluation metrics.

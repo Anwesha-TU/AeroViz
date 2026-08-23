@@ -1,0 +1,12 @@
+| Model             | Case       |  MAE (m)   | RMSE (m)   |       R²   |
+| ----------------- | ---------- | ---------- | ---------- | ---------- |
+| Linear Regression | Case 1     |     837.57 |    1017.74 |     0.5591 |
+| Linear Regression | Case 2     |     823.94 |     992.66 |     0.5805 |
+| Ridge Regression  | Case 1     |     837.52 |    1017.64 |     0.5592 |
+| Ridge Regression  | Case 2     |     824.01 |     992.75 |     0.5805 |
+| Random Forest     | Case 1     |     738.08 |     929.46 |     0.6323 |
+| Random Forest     | Case 2     |     724.41 |     915.00 |     0.6436 |
+| Gradient Boosting | Case 1     |     732.60 |     919.67 |     0.6400 |
+| Gradient Boosting | Case 2     |     721.27 |     912.38 |     0.6456 |
+| SVR               | Case 1     |     713.93 |     895.82 |     0.6584 |
+| SVR               | Case 2     |     706.75 |     897.24 |     0.6573 |

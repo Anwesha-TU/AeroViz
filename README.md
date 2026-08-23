@@ -2,13 +2,13 @@
 
 ## AI-Based Visibility Prediction Using Atmospheric and Air Quality Data at various stations
 
-AeroViz is a machine learning and deep learning project focused on predicting atmospheric visibility at various stations, using meteorological and air-quality parameters.
+AeroViz is a machine learning and deep learning based product for predicting atmospheric visibility at various stations, using meteorological and air-quality parameters.
 
-The project investigates the relationship between visibility and atmospheric conditions: **PM₂.₅, relative humidity, temperature, wind speed, and boundary layer height (BLH)**. It also compares predictions based on local airport observations with those based on atmospheric information from a more wider region.
+The producct investigates the relationship between visibility and atmospheric conditions: **PM₂.₅, relative humidity, temperature, wind speed, and boundary layer height (BLH)**. It also compares predictions based on local airport observations with those based on atmospheric information from a more wider region.
 
 ---
 
-## 📌 Project Objectives
+## 📌 Objectives
 
 The main objectives of AeroViz are to:
 

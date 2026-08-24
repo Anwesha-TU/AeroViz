@@ -4,7 +4,7 @@
 
 AeroViz is a machine learning and deep learning based product for predicting atmospheric visibility at various stations, using meteorological and air-quality parameters.
 
-The producct investigates the relationship between visibility and atmospheric conditions: **PM₂.₅, relative humidity, temperature, wind speed, and boundary layer height (BLH)**. It also compares predictions based on local airport observations with those based on atmospheric information from a more wider region.
+The product investigates the relationship between visibility and atmospheric conditions: **PM₂.₅, relative humidity, temperature, wind speed, and boundary layer height (BLH)**. It also compares predictions based on local airport observations with those based on atmospheric information from a more wider region.
 
 ---
 

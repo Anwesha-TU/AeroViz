@@ -57,3 +57,66 @@ Atmospheric and Air Quality Variables at time t
            Deep Learning Model
                     ↓
         Predicted Visibility at time t
+```
+
+### 2. Short-Term Visibility Forecasting
+
+Atmospheric and air-quality conditions available at the forecast issue time are used to predict future visibility:
+
+Forecast Issue Time (t)
+        │
+        │ Atmospheric and air-quality observations
+        │
+        ├──► Forecast visibility at t + 1 hour
+        │
+        ├──► Forecast visibility at t + 3 hours
+        │
+        └──► Forecast visibility at t + 6 hours
+
+🤖 Machine Learning Models
+
+The machine learning models investigated include:
+
+- Linear Regression
+- Ridge Regression
+- Random Forest Regressor
+- Gradient Boosting Regressor
+- Support Vector Regression (SVR)
+
+Deep learning models are also investigated as part of the project.
+
+📊 Model Evaluation
+Visibility Prediction and Forecasting
+
+Regression performance is evaluated using:
+
+- Mean Absolute Error (MAE)
+- Root Mean Squared Error (RMSE)
+- Coefficient of Determination (R²)
+- Fog Event Detection
+
+Predicted and observed visibility values are also evaluated for their ability to identify fog events using metrics such as:
+
+- Probability of Detection (POD)
+- False Alarm Ratio (FAR)
+- Critical Success Index (CSI)
+- Precision
+- Recall
+- F1 Score
+- Fog Severity Classification
+
+Fog events are further divided into three severity categories:
+
+- Shallow Fog	700–1000 m
+- Dense Fog	350–700 m
+- Very Dense Fog	<350 m
+
+Model predictions are evaluated to determine how accurately fog events are assigned to the correct severity category and whether models tend to underestimate or overestimate fog severity.
+
+📁 Data Sources and Input Variables
+
+The project combines atmospheric, meteorological, air-quality, and visibility data.
+
+The primary variables investigated include: PM₂.₅, Relative Humidity (RH), Temperature, Wind Speed, Boundary Layer Height (BLH) and Visibility
+
+For the regional-data experiments, atmospheric and air-quality information from multiple stations across the Delhi region is incorporated while the prediction target remains visibility at IGI Airport.

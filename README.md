@@ -6,7 +6,7 @@ AeroViz is a machine learning and deep learning-based project for predicting and
 
 The project investigates the relationship between visibility and atmospheric conditions, including **PM₂.₅, relative humidity, temperature, wind speed, and boundary layer height (BLH)**. It compares models based on local airport observations with models incorporating atmospheric information from the wider Delhi region.
 
-In addition to same-time visibility prediction, AeroViz performs short-term visibility forecasting at **1-hour, 3-hour, and 6-hour lead times**, using atmospheric conditions available at the forecast issue time to predict future visibility.
+In addition to same-time visibility prediction, AeroViz performs short-term visibility forecasting at **1-12 hour lead times, both with and without using time- lagged window features**, using atmospheric conditions available at the forecast issue time to predict future visibility.
 
 ---
 

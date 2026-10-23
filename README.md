@@ -59,13 +59,13 @@ Atmospheric and Air Quality Variables at time t
 ### 2. Short-Term Visibility Forecasting
 
 Atmospheric and air-quality conditions available at the forecast issue time are used to predict future visibility:
-
+```text
 Forecast Issue Time (t-k hour), k={0,12,24}
         │
         │ Atmospheric and air-quality observations
         │
         ├──► Forecast visibility at t + n hour, k=[1,12]
-
+```
 🤖 Machine Learning Models
 
 The machine learning models investigated include:

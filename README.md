@@ -28,11 +28,8 @@ The main objectives of AeroViz are to:
   - **Shallow Fog:** 700–1000 m
   - **Dense Fog:** 350–700 m
   - **Very Dense Fog:** <350 m
-- Develop short-term visibility forecasting models for:
-  - **1-hour lead time**
-  - **3-hour lead time**
-  - **6-hour lead time**
-- Investigate how forecasting performance changes with increasing lead time.
+- Develop short-term visibility forecasting models upto 12 hrs.
+- Investigate how forecasting performance changes with increasing lead time, and when input windows are used.
 - Compare the effect of fog-season-specific training and full-period training on short-term visibility forecasting.
 - Develop and compare deep learning models for visibility prediction and forecasting.
 
@@ -63,15 +60,11 @@ Atmospheric and Air Quality Variables at time t
 
 Atmospheric and air-quality conditions available at the forecast issue time are used to predict future visibility:
 
-Forecast Issue Time (t)
+Forecast Issue Time (t-k hour), k={0,12,24}
         │
         │ Atmospheric and air-quality observations
         │
-        ├──► Forecast visibility at t + 1 hour
-        │
-        ├──► Forecast visibility at t + 3 hours
-        │
-        └──► Forecast visibility at t + 6 hours
+        ├──► Forecast visibility at t + n hour, k=[1,12]
 
 🤖 Machine Learning Models
 
